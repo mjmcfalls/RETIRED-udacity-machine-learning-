@@ -74,3 +74,4 @@ tcl/
 pip-selfcheck.json
 dogImages
 lfw
+DogResnet50Data.npz
