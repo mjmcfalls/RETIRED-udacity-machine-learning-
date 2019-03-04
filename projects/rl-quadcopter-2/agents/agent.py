@@ -1,3 +1,4 @@
+
 from keras import layers, models, optimizers
 from keras import backend as K
 import numpy as np
@@ -9,6 +10,7 @@ from collections import namedtuple, deque
 class DDPG():
     """Reinforcement Learning agent that learns using DDPG."""
     def __init__(self, task):
+
         self.task = task
         self.state_size = task.state_size
         self.action_size = task.action_size
@@ -290,3 +292,4 @@ class ReplayBuffer:
     def __len__(self):
         """Return the current size of internal memory."""
         return len(self.memory)
+
